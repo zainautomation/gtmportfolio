@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Portfolio: GTM &amp; RevOps Case Studies | Zain Tanveer</title>
+<meta name="description" content="Case studies, workflow walkthroughs, and systems Zain Tanveer has shipped for GTM and RevOps engagements: Clay, HubSpot, n8n, and custom automation." />
+<link rel="canonical" href="https://zaintanveer.com/portfolio/" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2A4A'/%3E%3Crect x='9' y='9' width='9' height='9' rx='2' fill='%23F15A22'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --pearl:#F4F2EC; --pearl-2:#EDEAE1; --surface:#FFFFFF; --line:#E3DFD4;
+  --navy:#0F2A4A; --navy-deep:#0A1E38; --navy-soft:#1C3A5E;
+  --text:#14243B; --muted:#5A6B82;
+  --orange:#F15A22; --orange-dk:#D84813; --orange-soft:#FCE6DA;
+  --maxw:1140px;
+  --display:"Space Grotesk",system-ui,sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--pearl);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);display:inline-flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--orange);display:inline-block;}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px;}
+
+header.nav{position:sticky;top:0;z-index:50;background:rgba(244,242,236,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;}
+.brand{font-family:var(--display);font-weight:700;letter-spacing:-.01em;font-size:18px;color:var(--navy);display:flex;align-items:center;gap:10px;}
+.brand .dot{width:9px;height:9px;border-radius:2px;background:var(--orange);}
+.brand small{font-family:var(--mono);font-weight:400;font-size:11px;color:var(--muted);letter-spacing:.1em;}
+.nav-links{display:flex;gap:26px;align-items:center;}
+.nav-links a{font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;color:var(--muted);transition:color .2s;}
+.nav-links a:hover{color:var(--navy);}
+.nav-cta{color:#fff!important;background:var(--orange);padding:9px 16px;border-radius:6px;font-weight:600;transition:transform .15s,background .2s;}
+.nav-cta:hover{background:var(--orange-dk);transform:translateY(-1px);}
+
+.hero{padding:72px 0 48px;border-bottom:1px solid var(--line);}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,56px);line-height:1.04;letter-spacing:-.03em;margin:18px 0 0;color:var(--navy);}
+.hero p{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:52ch;margin:20px 0 0;}
+
+section.cases{padding:64px 0 96px;}
+.filter-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;}
+.filter-chip{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:100px;padding:8px 16px;background:var(--surface);}
+
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.case-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s;}
+.case-card:hover{transform:translateY(-4px);border-color:#D8D2C4;box-shadow:0 24px 50px -34px rgba(15,42,74,.4);}
+.case-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-soft) 60%,var(--orange-dk) 150%);display:flex;align-items:center;justify-content:center;}
+.case-thumb span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+.case-body{padding:24px 24px 26px;flex:1;display:flex;flex-direction:column;}
+.case-tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);}
+.case-card h3{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.2;letter-spacing:-.01em;margin:12px 0 8px;color:var(--navy);}
+.case-card p{font-size:14.5px;color:var(--muted);margin:0 0 18px;line-height:1.6;flex:1;}
+.case-link{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--navy);display:inline-flex;align-items:center;gap:8px;}
+.case-link::after{content:"→";transition:transform .2s;}
+.case-card:hover .case-link::after{transform:translateX(3px);}
+
+.case-card.soon{background:transparent;border-style:dashed;}
+.case-card.soon .case-thumb{background:var(--pearl-2);}
+.case-card.soon .case-thumb span{color:var(--muted);}
+.case-card.soon h3{color:var(--muted);}
+.case-card.soon .case-tag{color:var(--muted);}
+
+.drop-note{border:1px solid var(--line);border-left:3px solid var(--orange);border-radius:10px;background:var(--surface);padding:20px 24px;margin-top:40px;}
+.drop-note h2{font-family:var(--display);font-weight:600;font-size:16px;color:var(--navy);margin:0 0 6px;}
+.drop-note p{font-size:14.5px;color:var(--muted);margin:0;}
+
+footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+.foot-brand{font-family:var(--display);font-weight:700;font-size:16px;color:#fff;}
+.foot-brand small{display:block;font-family:var(--mono);font-weight:400;font-size:11px;color:#8CA0B8;letter-spacing:.1em;margin-top:3px;}
+.foot-links{display:flex;gap:20px;font-family:var(--mono);font-size:13px;}
+.foot-links a{color:#C7D2DF;}
+.foot-links a:hover{color:var(--orange);}
+.foot-copy{font-family:var(--mono);font-size:12px;color:#6E829A;}
+
+@media(max-width:640px){
+  .wrap{padding:0 20px;}
+  .case-grid{grid-template-columns:1fr;}
+  .nav-links{display:none;}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="brand"><span class="dot"></span>Zain Tanveer <small>GTM &middot; REVOPS</small></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#services">Services</a>
+      <a href="/knowledgebase/">Knowledgebase</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a class="nav-cta" href="https://www.linkedin.com/in/zainva/" target="_blank" rel="noopener">Work with me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Portfolio</span>
+    <h1>Systems I've actually shipped.</h1>
+    <p>Case studies and walkthroughs from real engagements: the n8n workflows, Clay builds, and HubSpot systems behind the results, not just the headline numbers.</p>
+  </div>
+</section>
+
+<section class="cases">
+  <div class="wrap">
+    <div class="filter-row">
+      <span class="filter-chip">n8n &amp; automation</span>
+      <span class="filter-chip">Clay</span>
+      <span class="filter-chip">HubSpot</span>
+      <span class="filter-chip">RevOps systems</span>
+    </div>
+
+    <div class="case-grid">
+      <div class="case-card soon">
+        <div class="case-thumb"><span>Case study incoming</span></div>
+        <div class="case-body">
+          <span class="case-tag">n8n &middot; automation</span>
+          <h3>First case study is being added</h3>
+          <p>Send over the screenshots, workflow export, or video walkthrough and a line on the problem it solved, and it'll show up here.</p>
+        </div>
+      </div>
+      <div class="case-card soon">
+        <div class="case-thumb"><span>Case study incoming</span></div>
+        <div class="case-body">
+          <span class="case-tag">Coming next</span>
+          <h3>More builds on the way</h3>
+          <p>Clay enrichment flows, HubSpot migrations, and outbound systems will land here next.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="drop-note">
+      <h2>How this gets filled in</h2>
+      <p>Send images, a workflow screenshot or export, a video link (Loom, YouTube), or a short write-up of the problem and result &mdash; each one becomes its own case study page here, with the main grid linking out to it.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">Zain Tanveer<small>GTM &amp; REVOPS SYSTEMS</small></div>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/zainva/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UC7HZvdi13rWI8xLNRbbOvIw" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.skool.com/gtm-sync-6333" target="_blank" rel="noopener">Skool</a>
+    </div>
+    <div class="foot-copy">&copy; <span id="yr"></span> Zain Tanveer</div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
