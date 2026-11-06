@@ -58,6 +58,8 @@ section.cases{padding:64px 0 96px;}
 .case-card:hover{transform:translateY(-4px);border-color:#D8D2C4;box-shadow:0 24px 50px -34px rgba(15,42,74,.4);}
 .case-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-soft) 60%,var(--orange-dk) 150%);display:flex;align-items:center;justify-content:center;}
 .case-thumb span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+.case-thumb.img{background:var(--navy);}
+.case-thumb.img img{width:100%;height:100%;object-fit:cover;}
 .case-body{padding:24px 24px 26px;flex:1;display:flex;flex-direction:column;}
 .case-tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);}
 .case-card h3{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.2;letter-spacing:-.01em;margin:12px 0 8px;color:var(--navy);}
@@ -126,14 +128,15 @@ footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
     </div>
 
     <div class="case-grid">
-      <div class="case-card soon">
-        <div class="case-thumb"><span>Case study incoming</span></div>
+      <a class="case-card" href="/portfolio/emailbison-attio-sync/">
+        <div class="case-thumb img"><img src="/portfolio/emailbison-attio-sync/workflow.png" alt="EmailBison to Attio n8n workflow diagram" loading="lazy" /></div>
         <div class="case-body">
           <span class="case-tag">n8n &middot; automation</span>
-          <h3>First case study is being added</h3>
-          <p>Send over the screenshots, workflow export, or video walkthrough and a line on the problem it solved, and it'll show up here.</p>
+          <h3>EmailBison to Attio, reply sync on autopilot</h3>
+          <p>A webhook-triggered n8n workflow that captures every inbound campaign reply and writes company, contact, and activity records straight into Attio.</p>
+          <span class="case-link">Read the case study</span>
         </div>
-      </div>
+      </a>
       <div class="case-card soon">
         <div class="case-thumb"><span>Case study incoming</span></div>
         <div class="case-body">
