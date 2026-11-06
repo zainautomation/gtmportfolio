@@ -78,6 +78,16 @@ section.cases{padding:64px 0 96px;}
 .drop-note h2{font-family:var(--display);font-weight:600;font-size:16px;color:var(--navy);margin:0 0 6px;}
 .drop-note p{font-size:14.5px;color:var(--muted);margin:0;}
 
+section.videos{padding:0 0 96px;}
+section.videos h2{font-family:var(--display);font-weight:600;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.02em;line-height:1.1;margin:16px 0 36px;color:var(--navy);}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+.video-card{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:10px;box-shadow:0 24px 50px -38px rgba(15,42,74,.4);}
+.video-embed{position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;background:var(--navy-deep);}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.video-card.soon{background:transparent;border-style:dashed;box-shadow:none;}
+.video-embed.placeholder{display:flex;align-items:center;justify-content:center;background:var(--pearl-2);}
+.video-embed.placeholder span{position:absolute;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;padding:0 20px;}
+
 footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
 .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
 .foot-brand{font-family:var(--display);font-weight:700;font-size:16px;color:#fff;}
@@ -90,6 +100,7 @@ footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
 @media(max-width:640px){
   .wrap{padding:0 20px;}
   .case-grid{grid-template-columns:1fr;}
+  .video-grid{grid-template-columns:1fr;}
   .nav-links{display:none;}
 }
 </style>
@@ -150,6 +161,23 @@ footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
     <div class="drop-note">
       <h2>How this gets filled in</h2>
       <p>Send images, a workflow screenshot or export, a video link (Loom, YouTube), or a short write-up of the problem and result &mdash; each one becomes its own case study page here, with the main grid linking out to it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="videos">
+  <div class="wrap">
+    <span class="eyebrow">Video walkthroughs</span>
+    <h2>Watch the builds, not just read about them.</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/koM4fRBxgAg" title="Zain Tanveer, video walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card soon">
+        <div class="video-embed placeholder"><span>More walkthroughs coming soon</span></div>
+      </div>
     </div>
   </div>
 </section>
