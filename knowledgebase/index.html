@@ -66,6 +66,17 @@ section.docs{padding:64px 0 96px;}
 .doc-card.soon h3{color:var(--muted);}
 .doc-card.soon .doc-tag{color:var(--muted);}
 
+section.newsletter{padding:0 0 96px;}
+.news-box{border-radius:16px;background:var(--navy);color:#EAF0F7;padding:44px 40px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+.news-box .eyebrow{color:var(--orange);}
+.news-box .eyebrow::before{background:var(--orange);}
+.news-box h2{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.2vw,34px);letter-spacing:-.02em;margin:14px 0 0;color:#fff;}
+.news-tag{font-family:var(--mono);font-size:13px;color:#F3B18F;margin:8px 0 0;}
+.news-desc{font-size:14.5px;color:#AEBCCE;max-width:52ch;margin:12px 0 0;line-height:1.6;}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;font-weight:600;padding:13px 22px;border-radius:8px;white-space:nowrap;}
+.btn-primary{background:var(--orange);color:#fff!important;}
+.btn-primary:hover{background:var(--orange-dk);}
+
 footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
 .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
 .foot-brand{font-family:var(--display);font-weight:700;font-size:16px;color:#fff;}
@@ -122,6 +133,20 @@ footer{background:var(--navy-deep);color:#C7D2DF;padding:44px 0;}
         <h3>More worksheets on the way</h3>
         <p>Pipeline, Clay enrichment, and HubSpot playbooks are next up in the knowledgebase.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="wrap">
+    <div class="news-box">
+      <div>
+        <span class="eyebrow">Newsletter</span>
+        <h2>GTM Sync</h2>
+        <p class="news-tag">Connecting the dots that drive growth.</p>
+        <p class="news-desc">A monthly newsletter on go-to-market strategy and sales outreach: AI-driven outbound, TAM building, and the systems behind pipeline growth.</p>
+      </div>
+      <a class="btn btn-primary" href="https://www.linkedin.com/newsletters/gtm-sync-7510070027635691520" target="_blank" rel="noopener">Subscribe on LinkedIn &rarr;</a>
     </div>
   </div>
 </section>
